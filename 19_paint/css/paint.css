@@ -3,8 +3,8 @@
   width: -moz-fit-content;
   width: -ms-fit-content;
   width: fit-content;
-  max-width: 500px;
-  max-height: 300px;
+  max-width: 1000px;
+  max-height: 600px;
   border: 2px solid silver;
   overflow: auto;
   position: relative;
