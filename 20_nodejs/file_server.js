@@ -12,8 +12,7 @@ http.createServer(function(request, response) {
       response.end(body);
   }
   if (request.method in methods)
-    methods[request.method](urlToPath(request.url),
-                            respond, request);
+    methods[request.method](urlToPath(request.url), respond, request);
   else
     respond(405, "Method " + request.method +
             " not allowed.");
@@ -75,4 +74,3 @@ methods.PUT = function(path, respond, request) {
   });
   request.pipe(outStream);
 };
-
